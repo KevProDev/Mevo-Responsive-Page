@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,700,700i");
+.type--light {
+  color: #cdcdcd; }
+
 @keyframes moveDown {
   0% {
     transform: translateY(0); }
@@ -127,8 +130,6 @@
 
 .btn {
   display: inline-block;
-  padding: 1.5rem 0;
-  width: 20rem;
   font-size: 1.2rem;
   font-weight: 900;
   color: #fff;
@@ -138,7 +139,18 @@
   position: relative;
   z-index: 3;
   text-transform: uppercase;
-  transition: all .3 ease; }
+  transition: all .3 ease;
+  margin-top: 1.620rem; }
+
+.btn--lg {
+  padding: 1.5rem 0;
+  width: 20rem; }
+
+.btn--sm {
+  width: 15rem;
+  padding: 1.3rem 0;
+  font-size: 13px;
+  letter-spacing: 2px; }
 
 .btn--red {
   background-color: #ca2932;
