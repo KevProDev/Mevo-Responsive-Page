@@ -2,6 +2,9 @@
 .type--light {
   color: #cdcdcd; }
 
+.hide-on-desktop {
+  display: none; }
+
 @keyframes moveDown {
   0% {
     transform: translateY(0); }
@@ -232,9 +235,10 @@ h2 {
   margin: 1rem 0; }
 
 h3 {
-  font-size: 42px;
+  font-size: 41px;
   line-height: 5.25rem;
-  margin: 0 0 3.15rem; }
+  margin: 0 0 3.15rem;
+  font-weight: 100; }
 
 h5 {
   text-transform: uppercase;
@@ -449,11 +453,36 @@ nav a#openup {
   vertical-align: middle; }
 
 /*--------------------------------------------------------
-  5.3 About Me
+  5.3 Portable
 ----------------------------------------------------------*/
+@media (min-width: 1024px) {
+  .hp-portable {
+    padding-top: 18rem;
+    padding-bottom: 20rem; } }
+
+.hp-portable {
+  overflow: hidden;
+  position: relative; }
+
+.portable-img {
+  position: absolute;
+  left: -15%;
+  top: 15%;
+  width: 60%; }
+
+.portable-content {
+  margin-left: 50%; }
+
 /*--------------------------------------------------------
-  5.3 Contact
+  5.3 Vimeo
 ----------------------------------------------------------*/
+.hp-vimeo {
+  padding-top: 3rem; }
+
+.vimeo-img {
+  width: 50rem;
+  margin-bottom: 6.4rem; }
+
 .contact {
   padding: 10rem 0rem; }
   @media (max-width: 580px) {
