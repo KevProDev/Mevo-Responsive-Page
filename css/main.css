@@ -44,14 +44,6 @@
   display: table;
   clear: both; }
 
-.row [class^="col-"] {
-  float: none;
-  display: inline-block;
-  padding-left: 30px;
-  padding-right: 30px;
-  white-space: nowrap;
-  overflow: hidden; }
-
 .space-left {
   margin-left: 8.333%; }
 
@@ -128,12 +120,21 @@
 .col-1-of-12 {
   width: 8.33333%; }
 
+.row [class^="col-"] {
+  float: none;
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  white-space: normal;
+  overflow: hidden; }
+
 .btn {
   display: inline-block;
   font-size: 1.2rem;
   font-weight: 900;
   color: #fff;
   cursor: pointer;
+  text-align: center;
   letter-spacing: .192rem;
   border-radius: 50px;
   position: relative;
@@ -258,7 +259,7 @@ body {
   min-width: 320px; }
 
 section {
-  padding: 6rem 0rem; }
+  padding: 10rem 0rem; }
   @media (max-width: 580px) {
     section {
       padding: 5rem 2rem; } }
@@ -442,8 +443,11 @@ nav a#openup {
   width: 15rem; }
 
 /*--------------------------------------------------------
-  5.3 My Work
+  5.3 App Share
 ----------------------------------------------------------*/
+.hp-share [class*=col-] {
+  vertical-align: middle; }
+
 /*--------------------------------------------------------
   5.3 About Me
 ----------------------------------------------------------*/
@@ -451,7 +455,7 @@ nav a#openup {
   5.3 Contact
 ----------------------------------------------------------*/
 .contact {
-  padding: 6rem 0rem; }
+  padding: 10rem 0rem; }
   @media (max-width: 580px) {
     .contact {
       padding: 5rem 2rem; } }
