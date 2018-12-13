@@ -561,3 +561,12 @@ nav a#openup {
   height: 33px;
   bottom: 33px;
   vertical-align: text-bottom; }
+
+/*--------------------------------------------------------
+  5.3 CTA ORDER
+----------------------------------------------------------*/
+.cta-order {
+  background: url(../img/cta.jpg);
+  background-size: cover;
+  background-position: cover;
+  padding: 38rem 0 10rem; }
