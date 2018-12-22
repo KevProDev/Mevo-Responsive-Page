@@ -53,15 +53,6 @@
   color: #2966d0;
   border-bottom: 2px solid #2966d0; }
 
-@media (max-width: 680px) {
-  .row [class^="col-"] {
-    text-align: center;
-    width: calc((100% - 6rem));
-    float: inherit;
-    margin: 0 auto; }
-  .row [class^="col-"]:not(:last-child) {
-    margin-right: inherit; } }
-
 [class*="col-"] {
   float: none;
   display: inline-block;
@@ -149,6 +140,18 @@
     margin-right: auto;
     padding-left: 80px;
     padding-right: 80px; } }
+
+@media (max-width: 564.24px) {
+  .col-1-of-3, .col-1-of-4, .col-1-of-12 {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px; }
+  .col-1-of-1, .col-11-of-12, .col-5-of-6, .col-4-of-5, .col-3-of-4, .col-2-of-3, .col-3-of-5, .col-7-of-12, .col-1-of-2, .col-5-of-12, .col-2-of-5, .col-1-of-5, .col-1-of-6 {
+    padding-left: 30px;
+    padding-right: 30px; } }
 
 .row-no-margin:first-child {
   margin-bottom: 0; }
@@ -605,6 +608,10 @@ section {
   .badge svg {
     width: 11rem; } }
 
+@media (max-width: 1024px) {
+  .app-content {
+    text-align: left; } }
+
 /*--------------------------------------------------------
   5.3 App Share
 ----------------------------------------------------------*/
@@ -644,11 +651,15 @@ section {
   .portable-img-wrapper {
     background: 0 0; }
   .hp-portable {
-    padding-top: 18rem;
-    padding-bottom: 20rem; }
+    padding-bottom: 10rem; }
   .content-img-mobile {
     padding-left: 3rem;
     padding-right: 3rem; } }
+
+@media (min-width: 1024px) {
+  .hp-portable {
+    padding-top: 18rem;
+    padding-bottom: 12rem; } }
 
 .hp-portable {
   overflow: hidden;
@@ -681,6 +692,14 @@ section {
   padding-top: 0;
   margin-bottom: 9.6rem; }
 
+@media (max-width: 685px) {
+  .hp-testimonials {
+    padding: 6rem 0 15rem; } }
+
+@media (max-width: 564px) {
+  .hp-testimonials {
+    padding: 6rem 0 0; } }
+
 .testimonials-details {
   position: relative;
   height: 35rem; }
@@ -705,7 +724,18 @@ section {
 .testimonials-details blockquote {
   font-size: 3.6rem;
   font-weight: 100;
-  padding: 0 20rem; }
+  line-height: 50.4px;
+  padding: 0 5rem; }
+
+@media (max-width: 1024px) and (min-width: 767px) {
+  .testimonials-details blockquote {
+    font-size: 2.4rem;
+    padding: 0 10rem; } }
+
+@media (min-width: 1024px) {
+  .testimonials-details blockquote {
+    font-size: 3.6rem;
+    padding: 0 20rem; } }
 
 .author {
   display: inline-block;
@@ -743,7 +773,7 @@ section {
 
 @media (max-width: 767px) {
   .testimonials-inner-img {
-    height: 2.1rem; } }
+    height: 2rem; } }
 
 @media (min-width: 564.24px) {
   .testimonials-selector {
@@ -809,9 +839,6 @@ footer-nav {
     text-align: center; }
   .footer-col {
     width: 100%; }
-  .footer-list {
-    display: inline-block;
-    margin-right: 1.6rem; }
   .signup-container {
     text-align: center;
     margin-top: 3.2rem; } }
@@ -820,11 +847,29 @@ footer .footer-col {
   padding: 0px; }
 
 .footer-list {
-  display: inline-block;
-  margin-right: 1.5rem;
   margin-bottom: .6rem;
   font-size: 1.2rem;
   font-weight: 700; }
+
+@media (max-width: 1024px) {
+  .footer-list {
+    display: inline-block;
+    margin-right: 1.6rem; } }
+
+@media (min-width: 767px) {
+  .footer-list {
+    margin-right: 1.5rem; } }
+
+@media (min-width: 840px) {
+  .footer-list {
+    display: inline-block; } }
+
+@media (max-width: 460px) {
+  .footer-list {
+    display: block;
+    margin-right: 0;
+    padding-bottom: 5px;
+    display: block; } }
 
 .footer-a {
   color: #fafafa;
@@ -890,6 +935,19 @@ footer .footer-col {
   font-weight: 800;
   letter-spacing: 1.6px; }
 
+.socials {
+  text-align: right; }
+
+@media (max-width: 460px) {
+  .footer-lower-content {
+    display: block;
+    padding: 1.5rem 0; }
+  .copyright-area {
+    float: none;
+    text-align: center; }
+  .socials {
+    text-align: center; } }
+
 .copyright-area a {
   color: #4d4d4d;
   text-decoration: none;
@@ -909,9 +967,6 @@ footer .footer-col {
 
 .socials a:first-child {
   margin-left: 0; }
-
-.socials {
-  text-align: right; }
 
 .socials .vimeo {
   width: 2rem;
